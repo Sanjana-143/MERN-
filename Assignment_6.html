@@ -1,0 +1,340 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Invertis University | College Information</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f6f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #17365d;
+            color: white;
+            text-align: center;
+            padding: 25px 15px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 32px;
+        }
+
+        header p {
+            margin-bottom: 0;
+        }
+
+        nav {
+            background-color: #244a73;
+            text-align: center;
+            padding: 14px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            max-width: 1100px;
+            margin: 25px auto;
+            padding: 0 20px;
+        }
+
+        .hero img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+        }
+
+        .hero h2 {
+            color: #17365d;
+            margin-bottom: 5px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 0 20px;
+        }
+
+        .section {
+            background-color: white;
+            padding: 25px;
+            margin-bottom: 25px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: #17365d;
+            border-bottom: 2px solid #d4e3f3;
+            padding-bottom: 8px;
+        }
+
+        .course-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 18px;
+        }
+
+        .course {
+            flex: 1 1 200px;
+            padding: 18px;
+            background-color: #f2f7fc;
+            border: 1px solid #d5e3f0;
+            border-radius: 6px;
+        }
+
+        .course h3 {
+            color: #245580;
+            margin-top: 0;
+        }
+
+        .facilities {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .facility {
+            flex: 1 1 180px;
+            background-color: #f2f7fc;
+            padding: 15px;
+            text-align: center;
+            border: 1px solid #d5e3f0;
+            border-radius: 6px;
+        }
+
+        .contact a {
+            color: #245580;
+        }
+
+        footer {
+            background-color: #17365d;
+            color: white;
+            text-align: center;
+            padding: 18px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 25px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px 8px;
+            }
+
+            .hero img {
+                height: 220px;
+            }
+
+            .section {
+                padding: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Invertis University</h1>
+        <p>Knowledge • Innovation • Excellence</p>
+        <p>Bareilly, Uttar Pradesh, India</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#courses">Courses</a>
+        <a href="#facilities">Facilities</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="hero">
+
+        <img
+            src="D:\Data Analyst\HTML_CSS\Invertis.jpeg"
+            alt="Invertis University campus"
+            onerror="this.onerror=null; this.src='https://placehold.co/1100x350/e1eaf4/17365d?text=Invertis+University+Campus';">
+
+        <h2>Welcome to Invertis University</h2>
+
+        <p>
+            Explore academic opportunities, campus facilities
+            and student life at Invertis University.
+        </p>
+
+    </div>
+
+    <div class="container">
+
+        <section class="section" id="about">
+
+            <h2>About the University</h2>
+
+            <p>
+                Invertis University is located in Bareilly,
+                Uttar Pradesh, India. The university provides
+                educational opportunities across various fields
+                of study, including computer applications,
+                engineering, management and commerce.
+            </p>
+
+            <p>
+                The university focuses on academic learning,
+                practical knowledge and the overall development
+                of students.
+            </p>
+
+            <p>
+                <strong>Location:</strong>
+                Invertis Village, Delhi Lucknow Highway,
+                Bareilly, Uttar Pradesh - 243123
+            </p>
+
+        </section>
+
+        <section class="section" id="courses">
+
+            <h2>Popular Courses</h2>
+
+            <div class="course-list">
+
+                <div class="course">
+                    <h3>BCA</h3>
+                    <p>
+                        Bachelor of Computer Applications focuses
+                        on computing, programming and software concepts.
+                    </p>
+                </div>
+
+                <div class="course">
+                    <h3>B.Tech</h3>
+                    <p>
+                        Engineering education develops technical
+                        knowledge and problem-solving skills.
+                    </p>
+                </div>
+
+                <div class="course">
+                    <h3>MBA</h3>
+                    <p>
+                        Management education covers business,
+                        leadership and organizational skills.
+                    </p>
+                </div>
+
+                <div class="course">
+                    <h3>B.Com</h3>
+                    <p>
+                        Commerce education introduces students
+                        to accounting, business and finance.
+                    </p>
+                </div>
+
+            </div>
+
+            <p>
+                For the complete list of programs, visit the
+                <a href="https://www.invertisuniversity.ac.in/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    official university website
+                </a>.
+            </p>
+
+        </section>
+
+        <section class="section" id="facilities">
+
+            <h2>Campus Facilities</h2>
+
+            <div class="facilities">
+
+                <div class="facility">
+                    <h3>📚 Library</h3>
+                    <p>Resources for study and research.</p>
+                </div>
+
+                <div class="facility">
+                    <h3>💻 Computer Labs</h3>
+                    <p>Practical learning and computing facilities.</p>
+                </div>
+
+                <div class="facility">
+                    <h3>🏫 Classrooms</h3>
+                    <p>Spaces for teaching and learning.</p>
+                </div>
+
+                <div class="facility">
+                    <h3>🏆 Sports</h3>
+                    <p>Opportunities for sports and recreation.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="section contact" id="contact">
+
+            <h2>Contact Information</h2>
+
+            <p>
+                <strong>University:</strong> Invertis University
+            </p>
+
+            <p>
+                <strong>Address:</strong>
+                 Invertis Village, Delhi-Lucknow Highway NH-24,
+                Bareilly, Rajau Paraspur, Uttar Pradesh 243123, India
+            </p>
+
+            <p>
+                <strong>Phone:</strong> +91 9690955599
+            </p>
+
+            <p>
+                <strong>Website:</strong>
+                <a href="https://www.invertisuniversity.ac.in/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    www.invertisuniversity.ac.in
+                </a>
+            </p>
+
+        </section>
+
+    </div>
+
+    <footer>
+        <p>Assignment 6 | College Information Page</p>
+        <p>Created using HTML and CSS</p>
+    </footer>
+
+</body>
+</html>
+```
